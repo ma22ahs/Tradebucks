@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TradeBucks</title>
+
+<style>
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('fonts/Gilroy-Regular.ttf') format('truetype');    
+  }
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('fonts/Gilroy-Medium.ttf') format('truetype');;
+}  
+@font-face {
+    font-family: 'Gilroy-Black';
+    src: url('fonts/Gilroy-Black.ttf');
+}
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('fonts/Gilroy-Bold.ttf');
+}
+.content {
+  width: 80%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.centerplease {
+  margin: 0 auto;
+  max-width: 270px;
+  font-size: 40px;
+}
+
+/*Question*/
+.question {
+  position: relative;
+  background: #2553E9;
+  margin: 0;
+  padding: 10px 10px 10px 50px;
+  display: block;
+  width:100%;
+  cursor: pointer;
+  color: white;
+}
+/*Answer*/
+.answers {
+  padding: 0px 15px;
+  margin: 5px 0;
+  width:100%!important;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.questions:checked ~ .answers{
+  height: auto;
+  opacity: 1;
+  padding: 15px;
+  
+}
+
+/*FAQ Toggle*/
+.plus {
+  position: absolute;
+  margin-left: 10px;
+  z-index: 5;
+  font-size: 2em;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+color: white;
+}
+
+.questions:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+.questions {
+  display: none;
+  
+}
+
+.navbar{
+    width: 99%;
+    height: 5em;
+    background-color: white;
+}
+
+.navlogo{
+    float: left;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 1.5%;
+    margin-left: 4em;
+}
+
+.data{
+    text-align: center;
+    height: 5em;
+    width: 34%;
+    float:right;
+    margin-right: 38%;
+    margin-top: 1%;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    font-family: Gilroy-Regular;
+
+}
+
+.navbar-buttons{
+    float: right;
+    height: 3.75em;
+    width: 30%;
+    position: relative;
+    margin-right: -1000px;
+    display: inline;
+    padding: 10px;
+
+}
+
+.reg{
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    height: 3em;
+    width: 30%;
+    float: left;
+    margin-top: 13px;
+    font-family: Gilroy-Regular;
+
+}
+
+.login{
+    background-color: #2553e9;
+    border: none;
+    border-radius: 9px;
+    height: 3em;
+    width: 35%;
+    float: right;
+    margin-top: 13px;
+    margin-right: 8em;
+    color:white;
+    font-family: Gilroy-Regular;
+}
+
+
+.footer{
+    background-color: #F1F6F5;
+    width: 99%;
+    height: 10em;
+    position: relative;
+    top: 10em;
+}
+
+.footer-img{
+    position: relative;
+    left: 10%;
+    top: 5em;
+}
+
+.footer-data{
+    display: inline;
+    width: 50%;
+    position: relative;
+    top: 2em;
+    text-align: center;
+}
+.foot{
+    background-color: white;
+    width: 99%;
+    height: 3em;
+    position: relative;
+    top: 11em;
+}
+.foot-data{
+    color: grey;
+    text-align: left;
+    width: 89%;
+    position: relative;
+    top: 0.5em;
+    left: 10%;
+    font-family: Gilroy-Regular;
+}
+
+</style>
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <img src="images/Group 10nav-logo.png" alt="" class="navlogo">
+
+        <div class="data">
+            <ul>
+                <a href="index.html" style="text-decoration: none; color: black;">
+                    <li>
+                    How it works?
+                </li></a>
+                <a href="index.html" style="text-decoration: none; color: black;">
+                <li>
+                    About us
+                </li></a>
+                <a href="index.html" style="text-decoration: none; color: black;">
+                <li>
+                    FAQ
+                </li></a>
+                <a href="index.html" style="text-decoration: none; color: black;">
+                <li>
+                    Pricing
+                </li></a>
+                <a href="index.html" style="text-decoration: none; color: black;">
+                <li>
+                    Contact
+                </li></a>
+            </ul>
+        </div>
+
+        <div class="navbar-buttons">
+            <a href="../login-signup/signup.html"><button class="reg">Register</button></a>
+            <a href="../login-signup/login.html"><button class="login">Login</button></a>
+        </div>
+    </nav>
+
+    <div class="centerplease">
+        <h2 style="    font-family: Gilroy-Regular;">FAQ</h2>
+      </div>
+      <br>
+      
+      <div class="content" style="font-family: Gilroy-Regular;">
+      <div>
+        <input type="checkbox" id="question1" name="q"  class="questions">
+        <div class="plus">+</div>
+        <label for="question1" class="question" >
+            What is a trading bot? 
+        </label>
+        <div class="answers" >
+            A trading bot is a computer software created to carry out deals automatically on the user's behalf. It has the ability to examine market data, spot trading opportunities, and carry out deals in accordance with predetermined rules or algorithms.</div>
+      </div>
+      <div>
+        <input type="checkbox" id="question2" name="q"  class="questions">
+        <div class="plus">+</div>
+        <label for="question2" class="question">
+            How does a trading bot work? 
+        </label>
+        <div class="answers">
+            A trading bot operates by using an API to connect to a cryptocurrency exchange or trading platform, placing buy and sell orders automatically using algorithmic trading methods.</div>
+      </div>
+      <div>
+        <input type="checkbox" id="question3" name="q"  class="questions">
+        <div class="plus">+</div>
+        <label for="question3" class="question">
+            What are the benefits of using a trading bot? 
+        </label>
+        <div class="answers">
+             A trading bot can help traders save time, get rid of emotional bias, and profit from market chances round-the-clock. Also aids dealers in carrying out trades more precisely and quickly.</div>
+      </div>
+      <div>
+        <input type="checkbox" id="question4" name="q"  class="questions">
+        <div class="plus">+</div>
+        <label for="question4" class="question">
+            Do I need any programming skills to use a trading bot
+        </label>
+        <div class="answers">
+            While setting up and customising some trading bots requires programming knowledge, there are numerous user-friendly trading bots available that can be set up without the need for scripting. It's crucial to conduct research and pick a bot that suits your technical proficiency and trading objectives.</div>
+      </div>
+      <div>
+        <input type="checkbox" id="question5" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="question5" class="question">
+            Is it safe to use a trading bot?
+        </label>
+        <div class="answers">
+            The usage of trading bots can be secure, but it's crucial to pick a trustworthy bot and adhere to basic practises for safeguarding your API keys and guarding your account. Moreover, keep an eye on how your bot is doing and tweak your plan as necessary.
+        </div>
+      </div>
+        
+      <div>
+        <input type="checkbox" id="question6" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="question6" class="question">
+            Can I make money with a trading bot?  
+        </label>
+        <div class="answers">
+            While a trading bot can aid in more accurate and efficient trade execution, profits are not guaranteed. To increase your chances of success, it's crucial to conduct thorough research, create a solid trading strategy, and closely evaluate your bot's performance.
+        </div>
+      </div>
+      </div>
+
+      <div class="footer">
+        <img src="images/Group 10nav-logo.png" alt="" class="footer-img">
+        <div class="footer-data">
+            <ul style="width: 89%;">
+                <a href="index.html" style="text-decoration: none; color: black;">
+                    <li>
+                    How it works?
+                </li></a>
+                <a href="index.html" style="text-decoration: none; color: black;">
+                <li>
+                    About us
+                </li></a>
+                <a href="index.html" style="text-decoration: none; color: black;">
+                <li>
+                    FAQ
+                </li></a>
+                <a href="index.html" style="text-decoration: none; color: black;">
+                <li>
+                    Pricing
+                </li></a>
+                <a href="index.html" style="text-decoration: none; color: black;">
+                <li>
+                    Contact
+                </li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="foot">
+        <p class="foot-data">©2023 Made by Software project Team 30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Privacy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Imprints
+        </p>
+    </div>
+
+</body>
+</html>

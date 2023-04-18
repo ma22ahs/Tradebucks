@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeBucks</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/4d6649c173.css" crossorigin="anonymous">
+
+    <!--Custom Scroll Bar-->
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1; 
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: #888; 
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555; 
+        }
+        </style>
+        <!--Custom Scroll bar ends-->
+
+        <!--Mouse Follower Library Starts-->
+        <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <!--Mouse Follower Library Ends-->
+
+        <!--GSAP Library for mouse follower starts-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <!--GSAP Library for mouse follower ends-->
+
+        <!--Animation On Scroll Starts-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!--Animation on scroll Ends-->
+
+</head>
+<body>
+    
+    <nav class="navbar">
+
+        <img src="images/Group 10nav-logo.png" alt="" class="navlogo">
+
+        <div class="data">
+            <ul>
+                <a href="#how-it-works" style="text-decoration: none; color: black;">
+                    <li>
+                    How it works?
+                </li></a>
+                <a href="#about" style="text-decoration: none; color: black;">
+                <li>
+                    About us
+                </li></a>
+                <a href="faq.html" style="text-decoration: none; color: black;">
+                <li>
+                    FAQ
+                </li></a>
+                <a href="#pricing" style="text-decoration: none; color: black;">
+                <li>
+                    Pricing
+                </li></a>
+                <a href="#contact" style="text-decoration: none; color: black;">
+                <li>
+                    Contact
+                </li></a>
+            </ul>
+        </div>
+
+        <div class="navbar-buttons">
+            <a href="login-signup/signup.html"><button class="reg">Register</button></a>
+            <a href="login-signup/login.html"><button class="login">Login</button></a>
+        </div>
+    </nav>
+
+   <div class="hero-image" data-aos="zoom-in">
+    
+        <h1 class="banner-heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manage and Automate your crypto investment with TradeBucks</h1>
+        <p class="banner-text">Powerful, AI-powered cryto trading bot to help you save time, trade 24/7 and automate your trading </p>
+        <a href="dashboard/dashboard.html"><button type="submit" class="banner-button">Start 7-day FREE trial*</button></a>
+    
+   </div>
+
+   <div class="why-us" data-aos="fade-right">
+    <img src="images/Tag.png" alt="why us" class="tag" >
+    <h1 class="why-heading" id="how-it-works">Advantages of using a trade bot
+    </h1>
+    <p class="why-subtext">Get the maximum of using an automated trading system for buying and selling financial assets.
+
+    </p>
+   
+    <d iv class="row1">
+        <div class="col1-1">
+            <img src="images/1.png" alt="" class="img1-1">
+            <h1 class="heading1-1">Fast and efficient trading</h1>
+            <p class="text1-1">Trading bots can execute trades much more quickly than humans can, allowing for more efficient and swift trade execution.</p>
+        </div>
+
+        <div class="col1-2">
+            <img src="images/2.png" alt="" class="img1-2">
+            <h1 class="heading1-2">24/7 trading process</h1>
+            <p class="text1-2">· 24/7 trading, it executes multiple real-time trades at an instance without the use of human interaction.</p>
+
+        </div>
+
+        <div class="col1-3">
+            <img src="images/3.png" alt="" class="img1-3">
+            <h1 class="heading1-3">Back testing</h1>
+            <p class="text1-3">Trading bots can be tested and optimised using market data, giving traders the opportunity to produce the highest returns.</p>
+
+        </div>
+    </d>
+    <div class="row2">
+        <div class="col2-1">
+            <img src="images/1.png" alt="" class="img2-1">
+            <h1 class="heading2-1">Minimal loss</h1>
+            <p class="text2-1">Stop loss aids in limiting losses by automatically terminating a transaction when the price swings in the opposite direction of your position beyond a predetermined point.</p>
+        </div>
+        <div class="col2-2">
+            <img src="images/2.png" alt="" class="img2-2">
+            <h1 class="heading2-2">Powerful algorithms</h1>
+            <p class="text2-2">Trading bots can be tested and optimised using past market data, giving traders the opportunity to hone their tactics and find the parameters that produce the highest returns.</p>           
+        </div>
+        <div class="col2-3">
+            <img src="images/3.png" alt="" class="img2-3">
+            <h1 class="heading2-3">Data In Real Time</h1>
+            <p class="text2-3">Collect data in real-time from multiple channels and move it into a data lake, in its original format.</p>
+        </div>
+    </div>
+</div>
+
+    
+
+    <div class="about">
+        <img src="images/about.png" alt="" class="about-image" data-aos="fade-right">
+        <img src="images/about1.png" alt="" class="about1">
+
+        <h1 class="about-heading" id="about">Launch with the best stack</h1>
+        <p class="about-content">We are a group of four people that are passionate about technology and finance. We have successfully developed a trading bot that uses artificial intelligence to benefit from the stock market after months of research and development. For investors aiming to maximise their returns and optimise their trading techniques, our goal is to offer a cutting-edge solution. To ensure our bot's success in the always changing financial industry, we are dedicated to constantly enhancing and perfecting it.</p>
+    </div>
+
+    <div class="price">
+        <h1 class="price-heading" id="pricing">Get your best deals!</h1>
+        <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+        <p class="price-monthly">Monthly</p>
+        <p class="price-yearly">Yearly</p>
+        <img src="images/price1.png" alt="" class="price-70-off">
+        <img src="images/personal1.png" alt="" class="price-personal">
+        <a href="dashboard/dashboard.html"><button class="price-personal-button">Star Free Trial</button></a>
+        <img src="images/regiular.png" alt="" class="price-regular">
+        <a href="dashboard/dashboard.html"><button class="price-regular-button">Start Free Trial</button></a>
+        <img src="images/premium.png" alt="" class="price-premium" >
+        <a href="dashboard/dashboard.html"><button class="price-premium-button">Start Free Trial</button></a>
+
+    </div>  
+
+    <div class="start" data-aos="zoom-in-up">
+        <h1 class="start-main-heading">Click here and start trading...</h1>
+        <img src="images/start1.png" alt="" class="start-left">
+        <img src="images/start2.png" alt="" class="start-right">
+        <div class="start-white">
+            <a href="dashboard/dashboard.html"><button class="start-button">
+                <img src="images/button-icon.png" alt="" class="button-icon">
+                Start Trading Now
+            </button></a>
+        </div>
+        <div class="start-text">Set your trading parameters based on your trading strategy. This includes assets to trade, amounts to trade, and buy/sell price targets. Trading bots automatically execute trades based on these parameters.</div>
+    </div>
+    
+
+    <div class="contact">
+        <h1 class="contact-heading" id="contact">Our contact</h1>
+        <p class="contact-text">Our friendly team would love to hear from you!</p>
+        <p class="contact-phone"><i class="fa-light fa-phone"></i>+44 7884 569395</p>
+        <p class="contact-email"><i class="fa-light fa-envelope"></i>info@tradebucks.co.uk</p>
+        <p class="contact-location"><i class="fa-light fa-location-dot"></i>College Lane, Hatfield AL10 9AB</p>
+    </div>
+    <div class="form">
+        <p class="form-name-heading">Name</p>
+        <input type="text" class="form-name-field" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Enter your name">
+
+        <p class="form-email-heading">Email*</p>
+        <input type="email" class="form-email-field" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Enter your email">
+
+        <p class="form-message-heading">Your message</p>
+        <textarea name="message" placeholder="&nbsp;&nbsp;Your message" id="" cols="36" rows="10" class="form-message-box"></textarea>
+
+        <button class="form-send">Send</button>
+
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.901270541138!2d-0.24221610000000002!3d51.7531289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48763c6168daaaab%3A0xac6f1785ab1a10ad!2sCollege%20Lane%20Campus%20Main%20Reception!5e0!3m2!1sen!2suk!4v1677665794023!5m2!1sen!2suk" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+    <div class="footer">
+        <img src="images/Group 10nav-logo.png" alt="" class="footer-img">
+        <div class="footer-data">
+            <ul style="width: 89%;">
+                <a href="#how-it-works" style="text-decoration: none; color: black;">
+                    <li>
+                    How it works?
+                </li></a>
+                <a href="#about" style="text-decoration: none; color: black;">
+                <li>
+                    About us
+                </li></a>
+                <a href="faq.html" style="text-decoration: none; color: black;">
+                <li>
+                    FAQ
+                </li></a>
+                <a href="#pricing" style="text-decoration: none; color: black;">
+                <li>
+                    Pricing
+                </li></a>
+                <a href="#contact" style="text-decoration: none; color: black;">
+                <li>
+                    Contact
+                </li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="foot">
+        <p class="foot-data">©2023 Made by Software project Team 30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Privacy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Imprints
+        </p>
+    </div>
+
+    <!--Mouse Follower Configurtion-->
+    <script>
+        const cursor = new MouseFollower({
+        container: document.body,
+        speed: 0.3
+        });
+    </script>
+    <!--Mouse Follower Configuration Ends-->
+
+    <!--Animation On Scroll Starts-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init(
+        {
+            offset: 300,
+            duration: 1000,
+        }
+    );
+    </script>
+    <!--Animate on Scroll Ends-->
+    <!--https://github.com/michalsnik/aos-->
+</body>
+</html>

@@ -1,0 +1,881 @@
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('fonts/Gilroy-Regular.ttf') format('truetype');    
+  }
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('fonts/Gilroy-Medium.ttf') format('truetype');;
+}  
+@font-face {
+    font-family: 'Gilroy-Black';
+    src: url('fonts/Gilroy-Black.ttf');
+}
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('fonts/Gilroy-Bold.ttf');
+}
+body{
+    width: 99%;
+}
+.navbar{
+    width: 99%;
+    height: 5em;
+    background-color: white;
+}
+
+.navlogo{
+    float: left;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 1.5%;
+    margin-left: 4em;
+}
+
+.data{
+    text-align: center;
+    height: 5em;
+    width: 34%;
+    float:right;
+    margin-right: 38%;
+    margin-top: 1%;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    font-family: Gilroy-Regular;
+
+}
+
+.navbar-buttons{
+    float: right;
+    height: 3.75em;
+    width: 30%;
+    position: relative;
+    margin-right: -1000px;
+    display: inline;
+    padding: 10px;
+
+}
+
+.reg{
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    height: 3em;
+    width: 30%;
+    float: left;
+    margin-top: 13px;
+    font-family: Gilroy-Regular;
+
+}
+
+.login{
+    background-color: #2553e9;
+    border: none;
+    border-radius: 9px;
+    height: 3em;
+    width: 35%;
+    float: right;
+    margin-top: 13px;
+    margin-right: 8em;
+    color:white;
+    font-family: Gilroy-Regular;
+}
+
+.hero-image{
+    position: relative;
+    background-image: url("images/banner.png");
+    background-position: center;
+    height: 33em;
+    width: 99.99%;
+    margin-top: -2%;
+}
+
+.banner-heading{
+    color: white;
+    position: relative;
+    top:1.5em;
+    left: 10em;
+    width: 35%;
+    font-size: 3em;
+    text-align: center;
+    font-family: Gilroy-Medium;
+}
+
+.banner-text{
+    color: gray;
+    position: relative;
+    top:4em;
+    left: 35em;
+    text-align: center;
+    width: 25%;
+    font-size: 1em;
+    font-family: Gilroy-Regular;
+}
+
+.banner-button{
+    background-color: #2553e9;
+    text-align: center;
+    height: 4em;
+    width: 18%;
+    border-radius: 9px;
+    position: relative;
+    top: 5em;
+    left: 45.5em;
+    border: none;
+    color: white;
+    font-family: Gilroy-Bold;
+}
+
+.why-us{
+    width: 99%;
+    height: 20em;
+    background-color: white;
+}
+
+.tag{
+    position: relative;
+    top: 4em;
+    left: 38em;
+}
+
+.why-heading{
+    position: relative;
+    top: 2.5em;
+    left: 14em;
+    text-align: center;
+    color: black;
+    width: fit-content;
+    font-family: Gilroy-Bold;
+}
+
+.why-subtext{
+    position: relative;
+    top: 5em;
+    left: 21em;
+    text-align: center;
+    width: 50%;
+    color: gray;
+    font-family: Gilroy-Medium;
+}
+
+.row1{
+    width: 99%;
+    height: 10em;
+    position: relative;
+    top: 8em;
+    display: inline;
+}
+
+.row2{
+    width: 99%;
+    height: 10em;
+    position: relative;
+    top: 20em;
+    display: inline;
+}
+
+.col1-1{
+    height: 10em;
+    width: 22%;
+    display: inline;
+    position: relative;
+    left: 12%;
+    float: left;
+}
+.img1-1{
+    position: relative;
+    left: 42%;
+}
+.heading1-1{
+    position: relative;
+    left: 22%;
+    font-size: small;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-family: Gilroy-Bold;
+}
+.text1-1{
+    width: 80%;
+    position: relative;
+    left: 11%;
+    text-align: center;
+    color: gray;
+    font-family: Gilroy-Medium;
+}
+
+.col1-2{
+    height: 10em;
+    width: 24%;
+    display: inline;
+    position: relative;
+    left: 16%;
+    float: left;
+}
+.img1-2{
+    position: relative;
+    left: 43%;
+}
+.heading1-2{
+    position: relative;
+    left: 32%;
+    font-size: small;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-family: Gilroy-Bold;
+}
+.text1-2{
+    width: 82%;
+    position: relative;
+    left: 13%;
+    text-align: center;
+    color: gray;
+    font-family: Gilroy-Medium;
+}
+
+.col1-3{
+    height: 10em;
+    width: 22%;
+    display: inline;
+    position: relative;
+    right: 12%;
+    float: right;
+}
+.img1-3{
+    position: relative;
+    left: 38%;
+}
+.heading1-3{
+    position: relative;
+    top: -0.5em;
+    left: 32%;
+    font-size: small;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-family: Gilroy-Bold;
+}
+.text1-3{
+    width: 82%;
+    position: relative;
+    left: 13%;
+    text-align: center;
+    color: gray;
+    font-family: Gilroy-Medium;
+}
+
+
+
+.col2-1{
+    height: 10em;
+    width: 22%;
+    display: inline;
+    position: relative;
+    left: -34%;
+    float: left;
+}
+.img2-1{
+    position: relative;
+    left: 40%;
+}
+.heading2-1{
+    position: relative;
+    left: 34%;
+    font-size: small;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-family: Gilroy-Bold;
+}
+.text2-1{
+    width: 80%;
+    position: relative;
+    left: 12%;
+    text-align: center;
+    color: gray;
+    font-family: Gilroy-Medium;
+}
+
+.col2-2{
+    height: 10em;
+    width: 24%;
+    display: inline;
+    position: relative;
+    top: -10em;
+    left: 37.5%;
+    float: left;
+}
+.img2-2{
+    position: relative;
+    left: 44%;
+}
+.heading2-2{
+    position: relative;
+    left: 30%;
+    font-size: small;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-family: Gilroy-Bold;
+}
+.text2-2{
+    width: 80%;
+    position: relative;
+    left: 12%;
+    text-align: center;
+    color: gray;
+    font-family: Gilroy-Medium;
+}
+
+
+
+.col2-3{
+    height: 10em;
+    width: 24%;
+    display: inline;
+    position: relative;
+    top: -10em;
+    left: 42%;
+    float: left;
+}
+.img2-3{
+    position: relative;
+    left: 44%;
+}
+.heading2-3{
+    position: relative;
+    left: 32%;
+    font-size: small;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-family: Gilroy-Bold;
+}
+.text2-3{
+    width: 80%;
+    position: relative;
+    left: 12%;
+    text-align: center;
+    color: gray;
+    font-family: Gilroy-Medium;
+}
+
+.feature{
+    height: 46em;
+    width: 99%;
+    background-color: #F2F1F6;
+    position: relative;
+    top: 26em;
+}
+
+.feature-heading{
+    height:3em;
+    width: 100%;
+    color: black;
+    font-size: 2.1em;
+    position: relative;
+    top: 2em;
+    left: -8em;
+    font-family: Gilroy-Bold;
+}
+
+.feature-image{
+    width: 85%;
+    height: 28em;
+    position: relative;
+    top: 1em;
+    left: 6.5em;
+}
+
+.about{
+    height: 40em;
+    width: 99%;
+    background-color: white;
+    position: relative;
+    top: 39em;
+}
+
+.about-image{
+    height: 25em;
+    width: 35%;
+    position: relative;
+    left: -40%;
+    top: -2em;
+    float: left;
+}
+
+.about1{
+    height: 2em;
+    width: 15%;
+    float: right;
+    position: relative;
+    top: 5em;
+    right: 35%;
+}
+
+.about-heading {
+    height: 1em;
+    width: 30%;
+    float: right;
+    position: relative;
+    top:-9em;
+    left: -19%;
+    font-size: 2em;
+    font-family: Gilroy-Bold;
+}
+
+.about-content{
+    float: right;
+    position: relative;
+    top: -15em;
+    left: 11%;
+    width: 30%;
+    color: gray;
+    font-family: Gilroy-Medium;
+}
+
+
+.price{
+    background-color: #F2F1F6;
+    width: 99%;
+    height: 50em;
+    position: relative;
+    top: 22em;
+}
+.price-heading{
+    color: black;
+    position: relative;
+    top: 2em;
+    left: 36%;
+    text-align: center;
+    height: 1em;
+    width: 30%;
+    font-family: Gilroy-Bold;
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 9%;
+	height: 45px;
+	background: #dde6f4;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+    top: 3em;
+    left: 47%;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 35px;
+	height: 35px;
+	background: #2553e9;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #dde6f4;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 20%;
+}
+
+.price-monthly{
+    color:black;
+    display: inline;
+    width: 20%;
+    position: relative;
+    top: 3em;
+    left: 43%;
+    font-family: Gilroy-Regular;
+}
+
+.price-yearly{
+        color:black;
+        display: inline;
+        width: 20%;
+        position: relative;
+        top: 3em;
+        left: 52%;
+        font-family: Gilroy-Regular;
+}
+
+.price-70-off{
+    display: inline;
+    float: right;
+    position: relative;
+    top: 1em;
+    right: 31%;
+}
+
+.price-personal{
+    display: inline;
+    position: absolute;
+    top: 15em;
+    left: 14%;
+    width: 20%;
+    height: 28em;
+}
+
+.price-regular{
+    display: inline;
+    position: absolute;
+    left: 40% ;
+    top: 15em;
+    width: 20%;
+    height: 28em;
+}
+
+.price-premium{
+    display: inline;
+    position: absolute;
+    left: 65%;
+    top: 15em;
+    width: 20%;
+    height: 28em;
+}
+
+.price-personal-button{
+    background-color: #2553e9;
+    color: white;
+    border-radius: 20px;
+    width: 17%;
+    height: 3.2em;
+    border: none;
+    position: relative;
+    top: 38.4em;
+    left: 8%;
+    text-align: center;
+    font-family: Gilroy-Bold;
+}
+
+.price-regular-button{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    width: 17%;
+    height: 3.2em;
+    border: none;
+    position: relative;
+    top: 38.4em;
+    left: 16.5%;
+    text-align: center;    
+    font-family: Gilroy-Bold;
+}
+
+.price-premium-button{
+    background-color: #2553e9;
+    color: white;
+    border-radius: 20px;
+    width: 17%;
+    height: 3.2em;
+    border: none;
+    position: relative;
+    top: 38.4em;
+    left: 25%;
+    text-align: center;  
+    font-family: Gilroy-Bold;  
+}
+
+.start{
+    height: 37em;
+    width: 99%;
+    background-color: #2553e9;
+    position: relative;
+    top:19em;
+}
+
+.start-main-heading{
+    color: white;
+    text-align: center;
+    width: 50%;
+    height: 1em;
+    position: relative;
+    top: 1.5em;
+    left: 25%;
+    font-size: 3em;
+    font-family: Gilroy-Bold;
+}
+
+.start-white{
+    width:50%;
+    height: 12em;
+    position: relative;
+    top:1.5em;
+    left: 25%;
+    background-color: white;
+    border-radius: 8px;
+
+}
+
+.start-button{
+    background-color: black;
+    height: 3.5em;
+    width: 60%;
+    position: relative;
+    top: 2.5em;
+    left: 20%;
+    color: white;
+    font-size: 1.25em;
+    padding-bottom: 5em;
+    font-size: 20px;
+    font-family: Gilroy-Regular;
+}
+.button-icon{
+    position: relative;
+    left: -13%;
+    top: 1em;
+    height: 3em;
+    width: 15%;
+}
+
+.start-text{
+    width: 50%;
+    height: 3em;
+    color: white;
+    position: relative;
+    top: 5em;
+    left: 25%;
+    text-align: center;
+    font-family: Gilroy-Medium;
+}
+
+.start-left{
+    position: relative;
+    top: 13em;
+    left: 17%;
+}
+.start-right{
+    position: relative;
+    top: 8em;
+    left: 70%; 
+}
+
+.contact{
+    width: 38%;
+    height: 30em;
+    position: relative;
+    top: 20em;
+    float: left;
+}
+.contact-heading{
+    color: black;
+    width: 40%;
+    position: relative;
+    left: 28%;
+    top: 1em;
+    font-family: Gilroy-Bold;
+
+}
+.contact-text{
+    color: gray;
+    width: 50%;
+    position: relative;
+    top: 1.25em;
+    left: 28%;
+    width: 65%;
+    font-family: Gilroy-Regular;
+}
+.contact-phone{
+    color: black;
+    width: 40%;
+    position: relative;
+    left: 28%;
+    top: 2em;
+    font-family: Gilroy-Regular;
+}
+.contact-email{
+    color: black;
+    width: 40%;
+    position: relative;
+    left: 28%;
+    top: 2em;
+    font-family: Gilroy-Regular;
+}
+.contact-location{
+    color: black;
+    width: 60%;
+    position: relative;
+    left: 28%;
+    top: 2em;
+    font-family: Gilroy-Regular;
+}
+
+.form{
+    width: 45%;
+    height: 30em;
+    position: relative;
+    top: 20em;
+    float: right;
+}
+.form-name-heading{
+    color: black;
+    width: 40%;
+    position: relative;
+    left: 30%;
+    top: 3em;
+    font-family: Gilroy-Bold;
+
+}
+.form-name-field{
+    border: solid;
+    border-color: #EBEBEB;
+    border-width: 2px;
+    border-radius: 6px;
+    height: 3em;
+    width: 40%;
+    position: relative;
+    top: 2.5em;
+    left: 29%;
+    font-family: Gilroy-Regular;
+}
+.form-email-heading{
+    color: black;
+    width: 40%;
+    position: relative;
+    top: 2em;
+    left: 30%;
+    font-family: Gilroy-Bold;
+}
+.form-email-field{
+    border: solid;
+    border-color: #EBEBEB;
+    border-width: 2px;
+    border-radius: 6px;
+    height: 3em;
+    width: 40%;
+    position: relative;
+    top: 1.25em;
+    left: 29%;
+    font-family: Gilroy-Regular;
+}
+.form-message-heading{
+    color: black;
+    width: 40%;
+    position: relative;
+    top: 1em;
+    left: 30%;
+    font-family: Gilroy-Bold;
+}
+.form-message-box{
+    border: solid;
+    border-color: #EBEBEB;
+    border-width: 2px;
+    border-radius: 6px;
+    position: relative;
+    top: 0.25em;
+    left: 29%;
+    font-family: Gilroy-Regular;
+}
+.form-send{
+    border: none;
+    background-color: #2553e9;
+    width: 43%;
+    height: 3em;
+    border-radius: 8px;
+    position: relative;
+    top: 3em;
+    right: 13.9%;
+    color: white;
+    font-family: Gilroy-Regular;
+}
+
+.map{
+    position: relative;
+    top: 22em;
+}
+
+.footer{
+    background-color: #F1F6F5;
+    width: 99%;
+    height: 10em;
+    position: relative;
+    top: 21.5em;
+}
+
+.footer-img{
+    position: relative;
+    left: 10%;
+    top: 5em;
+}
+
+.footer-data{
+    display: inline;
+    width: 50%;
+    position: relative;
+    top: 2em;
+    text-align: center;
+}
+.foot{
+    background-color: white;
+    width: 99%;
+    height: 3em;
+    position: relative;
+    top: 22em;
+}
+.foot-data{
+    color: grey;
+    text-align: left;
+    width: 89%;
+    position: relative;
+    top: 0.5em;
+    left: 10%;
+    font-family: Gilroy-Regular;
+}
+
+/*FAQ Start*/
+
+
+
+  
+  
+  
+/*FAQ Ends*/
+
+/*Making Website Responsive*/
+
+
+/*Big Landscape Tablets, laptops and desktops*/
+@media (min-width: 1200px){
+   
+}
+
+/*Tablet, landscape, low-resolution laptop and desktop*/
+@media (max-width: 990px){
+   
+}
+
+/*portrait, tablet, e-readers kindle*/
+@media (max-width: 800px){
+
+}
+
+/*Smartphones, andriod phones, landscape Iphone*/
+@media (max-width: 600px){
+
+}
+
+/*Smartphones, portrait Iphones, portrait 480x320 phones (andriod)*/
+@media (max-width: 480px){
+
+}

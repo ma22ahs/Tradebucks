@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <div class = "signup-container-left">
+
+        <form action="signup" method="POST">
+            <h1 class="heading-signup">Create an account</h1>
+            <p class = "para-signup">welcome back please enter your details to <br> get access to the trading area</p>
+            <label class="name-label">Name</label>
+            <input type="text" name="name" class ="Name" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Name">
+            <label class="email-label-signup">Email</label> 
+           <input type="email" placeholder = "&nbsp;&nbsp;&nbsp;&nbsp;example@email.com" name="email-signup" class="email-signup">
+           <label class="password-label-signup">Password</label>
+           <div class="password-container">
+           <input type="password" name="password-signup" id="typepass" placeholder = "&nbsp;&nbsp;&nbsp;&nbsp;Password"  class="password-signup">
+           <!-- show pass -->
+           <i class="far fa-eye" name="i" onclick="Toggle()" id="showpass-signup"></i>
+           <!-- xx -->
+           </div>
+           <button type="submit" class="signup">Sign up</button>
+        </form>
+        <hr class="hrleft-signup">
+        <p class="para2-signup">Or,Sign up with</p>
+        <hr class="hrright-signup">
+        <button type="submit" class="google-signup"> <img class="g-img-signup" src="images/google-logo.png" alt="G"><p class="gbtn-txt">Sign up with Google</p></button>
+        <p class="para3">Already have an account? <a href="/login" >Login here</a> </p>
+    </div>
+
+    </div>
+    <div class="right-container">
+        <img src="images/right-img.png" class="img2" style="height:38.5em;" alt="">
+    </div>
+
+<!-- java script for toggle of view pass -->
+    <script>
+        // Change the type of input to password or text
+        function Toggle() {
+            var temp = document.getElementById("typepass");
+            if (temp.type === "password") {
+                temp.type = "text";
+            }
+            else {
+                temp.type = "password";
+            }
+        }
+    </script>
+    <script src="app.js"></script>
+
+</body>
+</html>
